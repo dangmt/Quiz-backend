@@ -26,7 +26,7 @@ FROM eclipse-temurin:17-jre-alpine
 COPY --from=build /app/target/*.jar app.jar
 
 # Mở cổng 8080
-EXPOSE 8080
+EXPOSE 8081
 
 # Định nghĩa lệnh để chạy ứng dụng
 ENTRYPOINT ["java","-jar","app.jar"]
